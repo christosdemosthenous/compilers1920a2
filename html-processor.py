@@ -34,7 +34,7 @@ with open('testpage.txt','r') as fp:
 
   text = rexp3.sub(' ',text)
 
-  for m in rexp4.finditer(text):
+  for m in rexp4finditer(text):
     print('{}    {}'.format(m.group(1),m.group(2)))
   text = rexp5p1.sub(' ',text) 
   text = rexp5p2.sub(' ',text) 
